@@ -1,35 +1,31 @@
 window.addEventListener('load', function () {
 
-
-    //Buscamos y obtenemos el formulario donde estan
-    //los datos que el usuario pudo haber modificado de la pelicula
+    // Obtener el formulario de actualización del paciente
     const formulario = document.querySelector('#update_paciente_form');
 
     formulario.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevenir el envío del formulario
+
+        // Obtener el ID del paciente
         let pacienteId = document.querySelector('#paciente_id').value;
 
-        //creamos un JSON que tendrá los datos de la película
-        //a diferencia de una pelicula nueva en este caso enviamos el id
-        //para poder identificarla y modificarla para no cargarla como nueva
+        // Crear un objeto con los datos del paciente
         const formData = {
-            id: document.querySelector('#paciente_id').value,
+            id: pacienteId,
             nombre: document.querySelector('#nombre').value,
             apellido: document.querySelector('#apellido').value,
             cedula: document.querySelector('#cedula').value,
             fechaIngreso: document.querySelector('#fechaIngreso').value,
             domicilio: {
-                id: document.querySelector('#domicilio_id').value,
                 calle: document.querySelector('#calle').value,
                 numero: document.querySelector('#numero').value,
                 localidad: document.querySelector('#localidad').value,
                 provincia: document.querySelector('#provincia').value
             },
             email: document.querySelector('#email').value
-
         };
 
-        //invocamos utilizando la función fetch la API peliculas con el método PUT que modificará
-        //la película que enviaremos en formato JSON
+        // Configuración para la petición PUT
         const url = '/paciente';
         const settings = {
             method: 'PUT',
@@ -38,38 +34,45 @@ window.addEventListener('load', function () {
             },
             body: JSON.stringify(formData)
         }
-        fetch(url,settings)
+
+        // Realizar la petición PUT para actualizar el paciente
+        fetch(url, settings)
             .then(response => response.json())
+            .then(data => {
+                console.log("Paciente actualizado:", data);
+                // Aquí puedes agregar lógica adicional para manejar la respuesta
+            })
+            .catch(error => {
+                console.error("Error actualizando el paciente:", error);
+            });
+    });
+});
 
-    })
-})
+// Función para encontrar un paciente por ID y llenar el formulario
+function findBy(id) {
+    const url = '/paciente/' + id;
+    const settings = {
+        method: 'GET'
+    }
 
-    //Es la funcion que se invoca cuando se hace click sobre el id de una pelicula del listado
-    //se encarga de llenar el formulario con los datos de la pelicula
-    //que se desea modificar
-    function findBy(id) {
-          const url = '/paciente'+"/"+id;
-          const settings = {
-              method: 'GET'
-          }
-          fetch(url,settings)
-          .then(response => response.json())
-          .then(data => {
-              let paciente = data;
-              document.querySelector('#paciente_id').value = paciente.id;
-              document.querySelector('#nombre').value = paciente.nombre;
-              document.querySelector('#apellido').value = paciente.apellido;
-              document.querySelector('#cedula').value = paciente.cedula;
-              document.querySelector('#fecha_ingreso').value = paciente.fechaIngreso;
-              document.querySelector('#domicilio_id').value = paciente.domicilio.id;
-              document.querySelector('#calle').value = paciente.domicilio.calle;
-              document.querySelector('#numero').value = paciente.domicilio.numero;
-              document.querySelector('#localidad').value = paciente.domicilio.localidad;
-              document.querySelector('#provincia').value = paciente.domicilio.provincia;
-              document.querySelector('#email').value = paciente.email;
-              // El formulario por defecto está oculto y al editar se habilita
-              document.querySelector('#div_paciente_updating').style.display = "block";
-          }).catch(error => {
-              alert("Error: " + error);
-      })
+    fetch(url, settings)
+        .then(response => response.json())
+        .then(data => {
+            let paciente = data;
+            document.querySelector('#paciente_id').value = paciente.id || '';
+            document.querySelector('#nombre').value = paciente.nombre || '';
+            document.querySelector('#apellido').value = paciente.apellido || '';
+            document.querySelector('#cedula').value = paciente.cedula || '';
+            document.querySelector('#fechaIngreso').value = paciente.fechaIngreso || '';
+            document.querySelector('#calle').value = paciente.domicilio.calle || '';
+            document.querySelector('#numero').value = paciente.domicilio.numero || '';
+            document.querySelector('#localidad').value = paciente.domicilio.localidad || '';
+            document.querySelector('#provincia').value = paciente.domicilio.provincia || '';
+            document.querySelector('#email').value = paciente.email || '';
+            // Mostrar el formulario de actualización
+            document.querySelector('#div_paciente_updating').style.display = "block";
+        })
+        .catch(error => {
+            console.error("Error encontrando el paciente:", error);
+        });
 }

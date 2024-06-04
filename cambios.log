@@ -959,3 +959,114 @@ INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES('12345','Car
 [2024-06-03 19:45:04] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
 [2024-06-03 19:45:04] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 2
 [2024-06-03 19:45:04] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=2, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 19:57:04] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda de todos los pacientes
+[2024-06-03 19:57:04] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 19:57:04] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 1
+[2024-06-03 19:57:04] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 19:57:04] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 19:57:04] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 2
+[2024-06-03 19:57:04] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=2, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 19:57:08] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda de todos los pacientes
+[2024-06-03 19:57:08] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 19:57:08] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 1
+[2024-06-03 19:57:08] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 19:57:08] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 19:57:08] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 2
+[2024-06-03 19:57:08] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=2, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 19:57:42] [ INFO ] [OdontologoDAOH2:105] iniciando la busqueda de todos los Odontologos
+[2024-06-03 19:57:43] [ INFO ] [OdontologoDAOH2:105] iniciando la busqueda de todos los Odontologos
+[2024-06-03 19:57:45] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda de todos los pacientes
+[2024-06-03 19:57:45] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 19:57:45] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 1
+[2024-06-03 19:57:45] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 19:57:45] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 19:57:45] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 2
+[2024-06-03 19:57:45] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=2, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 20:04:33] [ INFO ] [BD:42] tabla creada con exito
+[2024-06-03 21:44:04] [ INFO ] [BD:42] tabla creada con exito
+[2024-06-03 21:44:51] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda de todos los pacientes
+[2024-06-03 21:44:51] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:44:51] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 1
+[2024-06-03 21:44:51] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:44:51] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:44:51] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 2
+[2024-06-03 21:44:51] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=2, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:44:53] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda de todos los pacientes
+[2024-06-03 21:44:53] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:44:53] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 1
+[2024-06-03 21:44:53] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:44:53] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:44:53] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 2
+[2024-06-03 21:44:53] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=2, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:45:16] [ INFO ] [OdontologoDAOH2:105] iniciando la busqueda de todos los Odontologos
+[2024-06-03 21:45:17] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda de todos los pacientes
+[2024-06-03 21:45:17] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:45:17] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 1
+[2024-06-03 21:45:17] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:45:17] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:45:17] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 2
+[2024-06-03 21:45:17] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=2, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:48:48] [ INFO ] [BD:42] tabla creada con exito
+[2024-06-03 21:51:15] [ INFO ] [BD:42] tabla creada con exito
+[2024-06-03 21:51:30] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda de todos los pacientes
+[2024-06-03 21:51:30] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:51:30] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 1
+[2024-06-03 21:51:30] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:51:30] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:51:30] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 2
+[2024-06-03 21:51:30] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=2, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:51:34] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda de todos los pacientes
+[2024-06-03 21:51:34] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:51:34] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 1
+[2024-06-03 21:51:34] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:51:34] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:51:34] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 2
+[2024-06-03 21:51:34] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=2, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:51:35] [ INFO ] [OdontologoDAOH2:105] iniciando la busqueda de todos los Odontologos
+[2024-06-03 21:51:38] [ INFO ] [OdontologoDAOH2:105] iniciando la busqueda de todos los Odontologos
+[2024-06-03 21:51:39] [ INFO ] [OdontologoDAOH2:105] iniciando la busqueda de todos los Odontologos
+[2024-06-03 21:51:42] [ INFO ] [OdontologoDAOH2:105] iniciando la busqueda de todos los Odontologos
+[2024-06-03 21:51:44] [ INFO ] [OdontologoDAOH2:105] iniciando la busqueda de todos los Odontologos
+[2024-06-03 21:51:46] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda de todos los pacientes
+[2024-06-03 21:51:46] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:51:46] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 1
+[2024-06-03 21:51:46] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:51:46] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:51:46] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 2
+[2024-06-03 21:51:46] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=2, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:51:50] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda de todos los pacientes
+[2024-06-03 21:51:50] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:51:50] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 1
+[2024-06-03 21:51:50] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:51:50] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:51:50] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 2
+[2024-06-03 21:51:50] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=2, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:51:52] [ INFO ] [OdontologoDAOH2:105] iniciando la busqueda de todos los Odontologos
+[2024-06-03 21:51:55] [ INFO ] [OdontologoDAOH2:105] iniciando la busqueda de todos los Odontologos
+[2024-06-03 21:51:57] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda de todos los pacientes
+[2024-06-03 21:51:57] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:51:57] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 1
+[2024-06-03 21:51:57] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:51:57] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:51:57] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 2
+[2024-06-03 21:51:57] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=2, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:52:18] [ INFO ] [PacienteDAOH2:29] inicando la operacion de guardado
+[2024-06-03 21:52:18] [ INFO ] [DomicilioDAOH2:26] iniciando la operacion de : Guardado de un domicilio
+[2024-06-03 21:52:18] [ INFO ] [PacienteDAOH2:47] paciente guardado con exito
+[2024-06-03 21:52:19] [ INFO ] [PacienteDAOH2:130] iniciando la busqueda de todos los pacientes
+[2024-06-03 21:52:19] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:52:19] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 1
+[2024-06-03 21:52:19] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:52:19] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:52:19] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 2
+[2024-06-03 21:52:19] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=2, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:52:19] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:52:19] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 3
+[2024-06-03 21:52:19] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=3, calle=calle 54 #, numero=94, localidad=Cali, provincia=Valle del cauca)
+[2024-06-03 21:52:21] [ INFO ] [OdontologoDAOH2:49] iniciando la busqueda de un odontologo por id: 3
+[2024-06-03 21:53:00] [ INFO ] [PacienteDAOH2:58] iniciando la busqueda de un paciente por id: 1
+[2024-06-03 21:53:00] [ INFO ] [DomicilioDAOH2:51] iniciando la operacion de : Buscado de un domicilio
+[2024-06-03 21:53:00] [ INFO ] [DomicilioDAOH2:53] estoy en domicilio 1
+[2024-06-03 21:53:00] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA)
+[2024-06-03 21:53:00] [ INFO ] [PacienteDAOH2:71] estoy en busqueda de paciente por id con el id domicilio: 1
+[2024-06-03 21:53:00] [ INFO ] [PacienteDAOH2:80] estoy en busqueda de paciente retorno final: Paciente(id=1, nombre=Jorgito, apellido=Pereyra, cedula=123456, fechaIngreso=2024-05-15, domicilio=Domicilio(id=1, calle=Siempre viva, numero=742, localidad=Springfield, provincia=USA), email=jorge.pereyra@digitalhouse.com)
