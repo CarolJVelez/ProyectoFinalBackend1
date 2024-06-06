@@ -1,33 +1,36 @@
 package com.example.ProyectoIntegrador.service;
 
 
-
-import com.example.ProyectoIntegrador.dao.TurnoDAOLISTA;
-import com.example.ProyectoIntegrador.dao.iDao;
+import com.example.ProyectoIntegrador.entity.Odontologo;
 import com.example.ProyectoIntegrador.entity.Turno;
+import com.example.ProyectoIntegrador.repository.TurnoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
+@Service
 public class TurnoService {
-    private iDao<Turno> turnoiDao;
+    @Autowired
+    private TurnoRepository turnoRepository;
 
-    public TurnoService() {
-        turnoiDao= new TurnoDAOLISTA();
-    }
+
     public Turno guardarTurno(Turno turno){
-        return turnoiDao.guardar(turno);
-    }
-    public Turno buscarPorID(Integer id){
-        return turnoiDao.buscarPorID(id);
-    }
-    public List<Turno> listarTurnos(){
-        return turnoiDao.buscarTodos();
+        return turnoRepository.save(turno);
     }
     public void actualizarTurno(Turno turno){
-        turnoiDao.actualizar(turno);
+        turnoRepository.save(turno);
+    }
+    public Optional<Turno> buscarPorID(Long id){
+        return turnoRepository.findById(id);
+    }
+    public void eliminarTurno(Long id){
+        turnoRepository.deleteById(id);
+    }
+    public List<Turno> buscarTodos(){
+        return turnoRepository.findAll();
     }
 
-    public void eliminarTurno(Integer id){
-        turnoiDao.eliminar(id);
-    }
+
 }

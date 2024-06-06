@@ -1,38 +1,35 @@
 package com.example.ProyectoIntegrador.service;
 
 
-
-import com.example.ProyectoIntegrador.dao.PacienteDAOH2;
-import com.example.ProyectoIntegrador.dao.iDao;
 import com.example.ProyectoIntegrador.entity.Paciente;
+import com.example.ProyectoIntegrador.repository.PacienteRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class PacienteService {
-    //relacion de asociacion directa con el DAO
-    private iDao<Paciente> pacienteiDao;
+    @Autowired
+    private PacienteRepository pacienteRepository;
 
-    public PacienteService() {
-        pacienteiDao= new PacienteDAOH2();
-    }
     public Paciente guardarPaciente(Paciente paciente){
-        return pacienteiDao.guardar(paciente);
-    }
-    public Paciente buscarPaciente(Integer id){
-        return pacienteiDao.buscarPorID(id);
-    }
-    public List<Paciente> buscarTodos(){
-        return pacienteiDao.buscarTodos();
+        return pacienteRepository.save(paciente);
     }
     public void actualizarPaciente(Paciente paciente){
-        pacienteiDao.actualizar(paciente);
+        pacienteRepository.save(paciente);
     }
-    public Paciente buscarPorCorreo(String correo){
-        return pacienteiDao.buscarPorString(correo);
+    public Optional<Paciente> buscarPorID(Long id){
+        return pacienteRepository.findById(id);
     }
-    public void eliminarPaciente(Integer id){
-        pacienteiDao.eliminar(id);
+    public Optional<Paciente> buscarPorEmail(String email){
+        return pacienteRepository.findByEmail(email);
     }
-
+    public void eliminarPaciente(Long id){
+        pacienteRepository.deleteById(id);
+    }
+    public List<Paciente> buscarTodos(){
+        return pacienteRepository.findAll();
+    }
 }
