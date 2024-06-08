@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
         const settings = {
             method: 'GET'
         }
-console.log("estoy en turnos")
+
         fetch(url, settings)
             .then(response => response.json())
             .then(data => {
@@ -33,13 +33,21 @@ console.log("estoy en turnos")
                     let domicilio = turno.paciente.domicilio.calle + ' ' + turno.paciente.domicilio.numero + ', ' +
                         turno.paciente.domicilio.localidad + ', ' + turno.paciente.domicilio.provincia;
 
+                    let fecha = new Date(turno.fecha).toLocaleDateString('es-ES', {
+                        year: 'numeric',
+                        month: '2-digit',
+                        day: '2-digit'
+                    });
+                    console.log("estoy en turnos 1" + fecha)
+                    console.log("estoy en turnos 2" + turno.fecha)
+
                     turnoRow.innerHTML = '<td>' + updateButton + '</td>' +
                         '<td>' + odontologo + '</td>' +
                         '<td>' + paciente + '<br>' +
                         'Fecha de Ingreso: ' + turno.paciente.fechaIngreso + '<br>' +
                         'Domicilio: ' + domicilio + '<br>' +
                         'Email: ' + turno.paciente.email + '</td>' +
-                        '<td>' + turno.fechaCita + '</td>' +
+                        '<td>' + turno.fecha+ '</td>' +
                         '<td>' + deleteButton + '</td>';
 
                     tableBody.appendChild(turnoRow);

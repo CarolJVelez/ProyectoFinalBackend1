@@ -42,7 +42,7 @@ window.addEventListener('load', function () {
             odontologo: {
                 id: document.querySelector('#odontologo').value
             },
-            fechaCita: document.querySelector('#fechaCita').value
+            fecha: document.querySelector('#fecha').value
         };
 
         const url = 'http://localhost:8080/turnos';
@@ -80,7 +80,7 @@ window.addEventListener('load', function () {
     function resetUploadForm() {
         document.querySelector('#paciente').value = "";
         document.querySelector('#odontologo').value = "";
-        document.querySelector('#fechaCita').value = "";
+        document.querySelector('#fecha').value = "";
     }
 
     (function () {
