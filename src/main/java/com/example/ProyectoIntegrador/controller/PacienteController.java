@@ -21,14 +21,14 @@ public class PacienteController {
     public ResponseEntity<Paciente> registrarUnPaciente(@RequestBody Paciente paciente){
         return ResponseEntity.ok(pacienteService.guardarPaciente(paciente));
     }
-    @GetMapping("/{id}")
+    @GetMapping("/buscar/{id}")
     public ResponseEntity<Paciente> buscarPacienteID(@PathVariable Long id){
-       Optional<Paciente> pacienteBuscado= pacienteService.buscarPorID(id);
-       if(pacienteBuscado.isPresent()){
-           return ResponseEntity.ok(pacienteBuscado.get());
-       }else{
-           return ResponseEntity.notFound().build();
-       }
+        Optional<Paciente> pacienteBuscado= pacienteService.buscarPorID(id);
+        if(pacienteBuscado.isPresent()){
+            return ResponseEntity.ok(pacienteBuscado.get());
+        }else{
+            return ResponseEntity.notFound().build();
+        }
     }
 
     @PutMapping
