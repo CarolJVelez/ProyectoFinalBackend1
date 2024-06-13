@@ -33,10 +33,11 @@ window.addEventListener('load', function () {
 
         // Realizar la petición PUT para actualizar el turno
         fetch(url, settings)
-            .then(response => response.json())
+            .then(response => response.text()) // Cambiar a .text() en lugar de .json()
             .then(data => {
                 console.log("Turno actualizado:", data);
                 // Aquí puedes agregar lógica adicional para manejar la respuesta
+                alert(data); // Muestra una alerta con el mensaje de respuesta
             })
             .catch(error => {
                 console.error("Error actualizando el turno:", error);

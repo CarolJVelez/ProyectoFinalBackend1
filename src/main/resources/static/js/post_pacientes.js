@@ -1,13 +1,9 @@
 window.addEventListener('load', function () {
-    // Al cargar la página, buscamos y obtenemos el formulario donde estarán
-    // los datos que el usuario cargará del nuevo paciente
     const formulario = document.querySelector('#add_new_paciente');
 
-    // Ante un submit del formulario, se ejecutará la siguiente función
     formulario.addEventListener('submit', function (event) {
-        event.preventDefault(); // Para evitar el comportamiento por defecto del formulario
+        event.preventDefault();
 
-        // Creamos un JSON que tendrá los datos del nuevo paciente
         const formData = {
             nombre: document.querySelector('#nombre').value,
             apellido: document.querySelector('#apellido').value,
@@ -22,9 +18,7 @@ window.addEventListener('load', function () {
             email: document.querySelector('#email').value
         };
 
-        // Invocamos utilizando la función fetch la API pacientes con el método POST que guardará
-        // el paciente que enviaremos en formato JSON
-        const url = 'http://localhost:8080/paciente';
+        const url = '/paciente';
         const settings = {
             method: 'POST',
             headers: {
@@ -34,27 +28,47 @@ window.addEventListener('load', function () {
         };
 
         fetch(url, settings)
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    return response.text().then(text => {
+                        throw new Error(text);
+                    });
+                }
+                return response.json();
+            })
             .then(data => {
-                // Si no hay ningún error, se muestra un mensaje diciendo que el paciente se agregó bien
+
+                const responseDiv = document.querySelector('#response');
                 let successAlert = '<div class="alert alert-success alert-dismissible">' +
                     '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
                     '<strong>Paciente agregado correctamente</strong></div>';
 
-                document.querySelector('#response').innerHTML = successAlert;
-                document.querySelector('#response').style.display = "block";
+                responseDiv.innerHTML = successAlert;
+                responseDiv.style.display = "block";
                 resetUploadForm();
-
+                //Para que se cierre en 3seg
+                setTimeout(function() {
+                    responseDiv.style.display = "none";
+                }, 3000);
             })
             .catch(error => {
-                // Si hay algún error, se muestra un mensaje diciendo que el paciente no se pudo guardar y se intente nuevamente
+
+                console.error('Error en la solicitud:', error);
+
+                const responseDiv = document.querySelector('#response');
+                let errorMessage = error.message;
+
                 let errorAlert = '<div class="alert alert-danger alert-dismissible">' +
                     '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
-                    '<strong>Error, intente nuevamente</strong></div>';
+                    `<strong>${errorMessage}</strong></div>`;
 
-                document.querySelector('#response').innerHTML = errorAlert;
-                document.querySelector('#response').style.display = "block";
-                resetUploadForm();
+                responseDiv.innerHTML = errorAlert;
+                responseDiv.style.display = "block";
+
+                //Para que se cierre en 3seg
+                setTimeout(function() {
+                    responseDiv.style.display = "none";
+                }, 3000);
             });
     });
 
