@@ -1,7 +1,6 @@
 function deleteBy(id)
 {
-          //con fetch invocamos a la API de peliculas con el método DELETE
-          //pasandole el id en la URL
+    if (confirm("¿Estás seguro de que deseas eliminar este turno?")) {
           const url = '/turnos/eliminar/'+ id;
           const settings = {
               method: 'DELETE'
@@ -14,6 +13,7 @@ function deleteBy(id)
                       if (row) {
                           row.remove();
                       }
+                      alert("Turno eliminado con exito")
                   } else {
                       return response.json().then(error => {
                           console.error('Error al eliminar el turno:', error);
@@ -21,5 +21,5 @@ function deleteBy(id)
                   }
               })
               .catch(error => console.error('Error en la solicitud de eliminación:', error));
-
+    }
 }

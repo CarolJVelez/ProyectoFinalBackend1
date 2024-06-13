@@ -1,7 +1,6 @@
 function deleteBy(id)
 {
-          //con fetch invocamos a la API de peliculas con el método DELETE
-          //pasandole el id en la URL
+    if (confirm("¿Estás seguro de que deseas eliminar este Odontologo?")) {
           const url = '/odontologos/eliminar/'+ id;
           const settings = {
               method: 'DELETE'
@@ -14,6 +13,7 @@ function deleteBy(id)
                       if (row) {
                           row.remove();
                       }
+                      alert("Odontologo eliminado con exito")
                   } else {
                       return response.json().then(error => {
                           console.error('Error al eliminar el odontólogo:', error);
@@ -21,5 +21,5 @@ function deleteBy(id)
                   }
               })
               .catch(error => console.error('Error en la solicitud de eliminación:', error));
-
+    }
 }
