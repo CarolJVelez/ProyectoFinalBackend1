@@ -38,8 +38,7 @@ window.addEventListener('load', function () {
                         month: '2-digit',
                         day: '2-digit'
                     });
-                    console.log("estoy en turnos 1" + fecha)
-                    console.log("estoy en turnos 2" + turno.fecha)
+
 
                     turnoRow.innerHTML = '<td>' + updateButton + '</td>' +
                         '<td>' + odontologo + '</td>' +

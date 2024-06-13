@@ -42,7 +42,7 @@ public class TurnoController {
       }
  }
 
-    @GetMapping("/{id}")
+    @GetMapping("/buscar/{id}")
     public ResponseEntity<Turno> buscarPacienteID(@PathVariable Long id){
         Optional<Turno> turnoBuscado= turnoService.buscarPorID(id);
         if(turnoBuscado.isPresent()){
