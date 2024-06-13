@@ -2,6 +2,7 @@ package com.example.ProyectoIntegrador.service;
 
 
 import com.example.ProyectoIntegrador.entity.Odontologo;
+import com.example.ProyectoIntegrador.entity.Paciente;
 import com.example.ProyectoIntegrador.repository.OdontologoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,6 +30,8 @@ public class OdontologoService {
     public List<Odontologo> buscarTodos(){
         return odontologoRepository.findAll();
     }
-
+    public Optional<Odontologo> buscarPorMatricula(String matricula){
+        return odontologoRepository.findByMatricula(matricula);
+    }
 
 }

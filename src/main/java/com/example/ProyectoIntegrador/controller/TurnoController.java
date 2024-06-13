@@ -4,6 +4,8 @@ package com.example.ProyectoIntegrador.controller;
 import com.example.ProyectoIntegrador.entity.Odontologo;
 import com.example.ProyectoIntegrador.entity.Paciente;
 import com.example.ProyectoIntegrador.entity.Turno;
+import com.example.ProyectoIntegrador.exception.BadRequestException;
+import com.example.ProyectoIntegrador.exception.ResourceNotFoundException;
 import com.example.ProyectoIntegrador.service.OdontologoService;
 import com.example.ProyectoIntegrador.service.PacienteService;
 import com.example.ProyectoIntegrador.service.TurnoService;
@@ -28,8 +30,9 @@ public class TurnoController {
     public TurnoController() {
         turnoService= new TurnoService();
     }
+
   @PostMapping
-    public ResponseEntity<Turno> guardarTurno(@RequestBody Turno turno){
+    public ResponseEntity<Turno> guardarTurno(@RequestBody Turno turno) throws BadRequestException {
       Optional<Paciente> pacienteBuscado= pacienteService.buscarPorID(turno.getPaciente().getId());
       Optional<Odontologo> odontologoBuscado= odontologoService.buscarPorID(turno.getOdontologo().getId());
       if(odontologoBuscado.isPresent() && pacienteBuscado.isPresent()){
@@ -38,17 +41,17 @@ public class TurnoController {
           return ResponseEntity.ok(turnoService.guardarTurno(turno));
       }else{
           //bad request or not found
-          return ResponseEntity.badRequest().build();
+          throw new BadRequestException("El paciente u Odontologo no existe, verifica la informacion");
       }
  }
 
     @GetMapping("/buscar/{id}")
-    public ResponseEntity<Turno> buscarPacienteID(@PathVariable Long id){
+    public ResponseEntity<Turno> buscarPacienteID(@PathVariable Long id) throws ResourceNotFoundException{
         Optional<Turno> turnoBuscado= turnoService.buscarPorID(id);
         if(turnoBuscado.isPresent()){
             return ResponseEntity.ok(turnoBuscado.get());
         }else{
-            return ResponseEntity.notFound().build();
+            throw new ResourceNotFoundException("no se encontro el turno con id: "+ id);
         }
     }
 
@@ -58,7 +61,7 @@ public class TurnoController {
     }
 
     @PutMapping
-    public ResponseEntity<String> actualizarTurno(@RequestBody Turno turno){
+    public ResponseEntity<String> actualizarTurno(@RequestBody Turno turno) throws BadRequestException{
         //necesitamos primeramente validar si existe o  no
         Optional<Turno> turnoBuscado= turnoService.buscarPorID(turno.getId());
         if(turnoBuscado.isPresent()){
@@ -66,18 +69,18 @@ public class TurnoController {
             turnoService.guardarTurno(turno);
             return ResponseEntity.ok("turno actualizado");
         }else{
-            return  ResponseEntity.badRequest().body("no se encontro turno");
+            throw new BadRequestException("No se encontro el turno para actualizar");
         }
     }
 
     @DeleteMapping("/eliminar/{id}")
-    public ResponseEntity<String> eliminarTurno(@PathVariable Long id){
+    public ResponseEntity<String> eliminarTurno(@PathVariable Long id) throws ResourceNotFoundException{
         Optional<Turno> turnoBuscado= turnoService.buscarPorID(id);
         if(turnoBuscado.isPresent()){
             turnoService.eliminarTurno(id);
             return ResponseEntity.ok("turno eliminado con exito");
         }else{
-            return ResponseEntity.badRequest().body("turno no encontrado");
+            throw new ResourceNotFoundException("No existe el turno con el id: " + id);
         }
     }
 }
