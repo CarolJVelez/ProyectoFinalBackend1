@@ -67,7 +67,7 @@ public class TurnoController {
         if(turnoBuscado.isPresent()){
             turnoService.eliminarTurno(turno.getId());
             turnoService.guardarTurno(turno);
-            return ResponseEntity.ok("turno actualizado");
+            return ResponseEntity.ok("Turno actualizado con exito");
         }else{
             throw new BadRequestException("No se encontro el turno para actualizar");
         }

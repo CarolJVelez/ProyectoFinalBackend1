@@ -42,7 +42,13 @@ window.addEventListener('load', function () {
     (function(){
         let pathname = window.location.pathname;
         if (pathname == "/get_odontologos.html") {
-            document.querySelector(".nav .nav-item a:last").classList.add("active");
+            let navLink = document.querySelector(".nav .nav-item a:last-child");
+            if (navLink) {
+                navLink.classList.add("active");
+            }
         }
     })();
 });
+
+
+

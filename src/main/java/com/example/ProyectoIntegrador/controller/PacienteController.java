@@ -45,7 +45,7 @@ public class PacienteController {
         Optional<Paciente> pacienteBuscado= pacienteService.buscarPorID(paciente.getId());
         if(pacienteBuscado.isPresent()){
             pacienteService.actualizarPaciente(paciente);
-            return ResponseEntity.ok("paciente actualizado");
+            return ResponseEntity.ok("Paciente actualizado con exito");
         }else{
             throw new BadRequestException("No se encontro el paciente para actualizar");
         }

@@ -47,7 +47,7 @@ public class OdontologoController {
         Optional<Odontologo> odontologoBuscado= odontologoService.buscarPorID(odontologo.getId());
         if(odontologoBuscado.isPresent()){
             odontologoService.actualizarOdontologo(odontologo);
-            return ResponseEntity.ok("Odontologo actualizado");
+            return ResponseEntity.ok("Odontologo actualizado con exito");
         }else{
             throw new ResourceNotFoundException("No existe el odontologo para actualizar");
         }

@@ -6,6 +6,7 @@ window.addEventListener('load', function () {
     const formulario = document.querySelector('#update_paciente_form');
 
     formulario.addEventListener('submit', function (event) {
+        event.preventDefault();
         let pacienteId = document.querySelector('#paciente_id').value;
 
         //creamos un JSON que tendrá los datos de la película
@@ -29,6 +30,7 @@ window.addEventListener('load', function () {
 
         //invocamos utilizando la función fetch la API peliculas con el método PUT que modificará
         //la película que enviaremos en formato JSON
+        if (confirm("¿Estás seguro de que deseas actualizar este paciente?")) {
         const url = '/paciente';
         const settings = {
             method: 'PUT',
@@ -38,11 +40,36 @@ window.addEventListener('load', function () {
             body: JSON.stringify(formData)
         }
         fetch(url,settings)
-            .then(response => response.json())
-
+            .then(response => response.text())
+            .then(data => {
+                console.log("Paciente actualizado:", data);
+                mostrarMensaje(data, 'success');
+                // Recarga la página después de un breve retraso
+                setTimeout(() => {
+                    window.location.reload();
+                }, 2000);
+            })
+            .catch(error => {
+                console.error("Error actualizando el paciente:", error);
+                mostrarMensaje('Error actualizando el paciente: ' + error.message, 'danger');
+            });
+        }
     })
 })
-
+function mostrarMensaje(mensaje, tipo) {
+    const responseDiv = document.querySelector('#response');
+    responseDiv.innerHTML = `
+        <div class="alert alert-${tipo} alert-dismissible fade show" role="alert">
+            ${mensaje}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>`;
+    responseDiv.style.display = 'block';
+    setTimeout(() => {
+        responseDiv.style.display = 'none';
+    }, 5000);
+}
 //Es la funcion que se invoca cuando se hace click sobre el id de una pelicula del listado
 //se encarga de llenar el formulario con los datos de la pelicula
 //que se desea modificar
