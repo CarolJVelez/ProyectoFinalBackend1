@@ -48,7 +48,19 @@ window.addEventListener('load', function () {
             }
         }
     })();
-});
 
+    // Implementación de la funcionalidad de cerrar sesión directamente aquí
+    const logoutBtn = document.getElementById('logoutBtn');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', function () {
+            // Mostrar un cuadro de confirmación antes de cerrar sesión
+            let confirmLogout = window.confirm("¿Estás seguro que deseas cerrar sesión?");
+
+            if (confirmLogout) {
+                window.location.href = 'http://localhost:8080/login';
+            }
+        });
+    }
+});
 
 

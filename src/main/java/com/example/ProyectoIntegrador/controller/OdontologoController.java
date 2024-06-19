@@ -6,6 +6,7 @@ import com.example.ProyectoIntegrador.entity.Paciente;
 import com.example.ProyectoIntegrador.exception.BadRequestException;
 import com.example.ProyectoIntegrador.exception.ResourceNotFoundException;
 import com.example.ProyectoIntegrador.service.OdontologoService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,12 +18,16 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/odontologos")
 public class OdontologoController {
+
+    private static final Logger logger= Logger.getLogger(OdontologoController.class);
+    
     @Autowired
     private OdontologoService odontologoService;
 
     @PostMapping //nos permite crear o registrar un paciente
     public ResponseEntity<Odontologo> registrarUnOdontologo(@RequestBody Odontologo odontologo) throws BadRequestException{
         Optional<Odontologo> odontologoBuscado= odontologoService.buscarPorMatricula(odontologo.getMatricula());
+        //logger.info("iniciando la operacion de : Guardado de un Odontologo");
         if(odontologoBuscado.isPresent()){
             throw new BadRequestException("La matricula ya existe, no se puede crear el odontologo");
         }
