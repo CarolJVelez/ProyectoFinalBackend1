@@ -12,12 +12,15 @@
 </head>
 <body>
 <div class="container">
-    <ul class="nav nav-pills">
-        <li class="nav-item">
-            <a class="nav-link" href="/get_odontologos.html">Listar Odontologos</a>
-        </li>
-    </ul>
-    <div class="row">
+    <div class="row mt-3">
+        <div class="col-sm-7">
+            <form action="/get_odontologos.html">
+                <button type="submit" class="btn btn-primary">Listar Odontólogos</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row mt-3">
         <div class="col-sm-7" style="background-color:#e6fffa; padding:10px; border-radius:3px">
             <h3>Agregar Odontologo</h3>
             <form id="add_new_odontologo">
@@ -49,7 +52,16 @@
             </div>
         </div>
     </div>
-</div>
 
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    // Script para manejar el botón de cerrar sesión en get_pacientes.html
+    $(document).ready(function() {
+        $('#logoutBtn').click(function() {
+            window.location.href = 'http://localhost:8080/index.html'; // Redirige siempre al index.html
+        });
+    });
+</script>
 </body>
 </html>
