@@ -8,6 +8,7 @@ window.addEventListener('load', function () {
         fetch(url, settings)
             .then(response => response.json())
             .then(data => {
+                console.log(data);
                 var tableBody = document.getElementById("OdontologoTableBody");
                 tableBody.innerHTML = ''; // Limpiar la tabla antes de agregar filas
 
@@ -49,18 +50,6 @@ window.addEventListener('load', function () {
         }
     })();
 
-    // Implementación de la funcionalidad de cerrar sesión directamente aquí
-    const logoutBtn = document.getElementById('logoutBtn');
-    if (logoutBtn) {
-        logoutBtn.addEventListener('click', function () {
-            // Mostrar un cuadro de confirmación antes de cerrar sesión
-            let confirmLogout = window.confirm("¿Estás seguro que deseas cerrar sesión?");
-
-            if (confirmLogout) {
-                window.location.href = 'http://localhost:8080/login';
-            }
-        });
-    }
 });
 
 

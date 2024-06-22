@@ -28,10 +28,10 @@ window.addEventListener('load', function () {
                         turno.id +
                         '</button>';
 
-                    let odontologo = turno.odontologo.nombre + ' ' + turno.odontologo.apellido + ' (Matrícula: ' + turno.odontologo.matricula + ')';
-                    let paciente = turno.paciente.nombre + ' ' + turno.paciente.apellido + ' (Cédula: ' + turno.paciente.cedula + ')';
-                    let domicilio = turno.paciente.domicilio.calle + ' ' + turno.paciente.domicilio.numero + ', ' +
-                        turno.paciente.domicilio.localidad + ', ' + turno.paciente.domicilio.provincia;
+                    let odontologo = turno.odontologo ? (turno.odontologo.nombre + ' ' + turno.odontologo.apellido + ' (Matrícula: ' + turno.odontologo.matricula + ')') : 'No disponible';
+                    let paciente = turno.paciente ? (turno.paciente.nombre + ' ' + turno.paciente.apellido + ' (Cédula: ' + turno.paciente.cedula + ')') : 'No disponible';
+                    let domicilio = turno.paciente && turno.paciente.domicilio ? (turno.paciente.domicilio.calle + ' ' + turno.paciente.domicilio.numero + ', ' +
+                        turno.paciente.domicilio.localidad + ', ' + turno.paciente.domicilio.provincia) : 'No disponible';
 
                     let fecha = new Date(turno.fecha).toLocaleDateString('es-ES', {
                         year: 'numeric',
@@ -39,14 +39,13 @@ window.addEventListener('load', function () {
                         day: '2-digit'
                     });
 
-
                     turnoRow.innerHTML = '<td>' + updateButton + '</td>' +
                         '<td>' + odontologo + '</td>' +
                         '<td>' + paciente + '<br>' +
-                        'Fecha de Ingreso: ' + turno.paciente.fechaIngreso + '<br>' +
+                        'Fecha de Ingreso: ' + (turno.paciente ? turno.paciente.fechaIngreso : 'No disponible') + '<br>' +
                         'Domicilio: ' + domicilio + '<br>' +
-                        'Email: ' + turno.paciente.email + '</td>' +
-                        '<td>' + turno.fecha+ '</td>' +
+                        'Email: ' + (turno.paciente ? turno.paciente.email : 'No disponible') + '</td>' +
+                        '<td>' + turno.fecha + '</td>' +
                         '<td>' + deleteButton + '</td>';
 
                     tableBody.appendChild(turnoRow);
@@ -67,17 +66,4 @@ window.addEventListener('load', function () {
             }
         }
     })();
-
-    // Implementación de la funcionalidad de cerrar sesión directamente aquí
-    const logoutBtn = document.getElementById('logoutBtn');
-    if (logoutBtn) {
-        logoutBtn.addEventListener('click', function () {
-            // Mostrar un cuadro de confirmación antes de cerrar sesión
-            let confirmLogout = window.confirm("¿Estás seguro que deseas cerrar sesión?");
-
-            if (confirmLogout) {
-                window.location.href = 'http://localhost:8080/login';
-            }
-        });
-    }
 });

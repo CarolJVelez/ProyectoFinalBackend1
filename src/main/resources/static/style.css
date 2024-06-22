@@ -1,0 +1,19 @@
+body {
+    background-image: url("./imagenes_clinica.jpg"); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 60px;
+    color:#222E3D;
+}
+
+

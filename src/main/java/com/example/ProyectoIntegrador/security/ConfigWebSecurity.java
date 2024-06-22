@@ -38,7 +38,6 @@ public class ConfigWebSecurity {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests((authz) -> authz
                         .requestMatchers("/post_pacientes.html", "/get_pacientes.html", "/post_odontologos.html", "get_odontologos.html").hasRole("ADMIN")
-                        .requestMatchers("/post_turnos.html", "/get_turnos.html").hasRole("USER")
                         .anyRequest().authenticated()
                 )
                 .formLogin(withDefaults())

@@ -1,11 +1,14 @@
 package com.example.ProyectoIntegrador.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDate;
 
-@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 @Entity
 @Table(name = "turnos")
 public class Turno {
@@ -22,5 +25,9 @@ public class Turno {
     @Column
     private LocalDate fecha;
 
-
+    public Turno(Paciente paciente, Odontologo odontologo, LocalDate fecha) {
+        this.paciente = paciente;
+        this.odontologo = odontologo;
+        this.fecha = fecha;
+    }
 }

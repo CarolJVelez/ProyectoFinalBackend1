@@ -1,9 +1,12 @@
 package com.example.ProyectoIntegrador.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
-@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 @Entity
 @Table(name = "domicilios")
 public class Domicilio {
@@ -20,5 +23,10 @@ public class Domicilio {
         @Column
         private String provincia;
 
-
+        public Domicilio(String calle, Integer numero, String localidad, String provincia) {
+                this.calle = calle;
+                this.numero = numero;
+                this.localidad = localidad;
+                this.provincia = provincia;
+        }
 }

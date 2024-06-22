@@ -1,9 +1,12 @@
 package com.example.ProyectoIntegrador.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
-@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 @Entity
 @Table(name = "odontologos")
 public class Odontologo {
@@ -18,7 +21,10 @@ public class Odontologo {
     @Column
     private String apellido;
 
-    public Odontologo() {
+    public Odontologo(String matricula, String nombre, String apellido) {
+        this.matricula = matricula;
+        this.nombre = nombre;
+        this.apellido = apellido;
     }
 
 

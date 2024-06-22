@@ -1493,3 +1493,96 @@ INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES('12345','Car
 [2024-06-05 21:11:27] [ INFO ] [DomicilioDAOH2:69] estoy en domicilio 2Domicilio(id=3, calle=calle 54 #, numero=94, localidad=Cali, provincia=Valle del cauca)
 [2024-06-05 21:11:38] [ INFO ] [OdontologoDAOH2:49] iniciando la busqueda de un odontologo por id: 1
 [2024-06-05 21:56:50] [ INFO ] [BD:42] tabla creada con exito
+[2024-06-21 22:16:12] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 22:16:12] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:16:14] [ INFO ] [TurnoController:67] iniciando la operacion de : Listar todos los Turnos
+[2024-06-21 22:16:31] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 22:16:31] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:16:32] [ INFO ] [TurnoController:67] iniciando la operacion de : Listar todos los Turnos
+[2024-06-21 22:18:39] [ INFO ] [PacienteController:29] iniciando la operacion de : Guardado de un Paciente
+[2024-06-21 22:18:43] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:18:48] [ INFO ] [OdontologoController:29] iniciando la operacion de : Guardado de un Odontologo
+[2024-06-21 22:18:49] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 22:18:52] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 22:18:58] [ INFO ] [OdontologoController:29] iniciando la operacion de : Guardado de un Odontologo
+[2024-06-21 22:18:59] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 22:19:01] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:19:01] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 22:19:06] [ INFO ] [TurnoController:42] iniciando la operacion de : Guardado de un Turno
+[2024-06-21 22:19:07] [ INFO ] [TurnoController:67] iniciando la operacion de : Listar todos los Turnos
+[2024-06-21 22:19:28] [ INFO ] [TurnoController:67] iniciando la operacion de : Listar todos los Turnos
+[2024-06-21 22:19:30] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:19:30] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 22:19:37] [ INFO ] [TurnoController:42] iniciando la operacion de : Guardado de un Turno
+[2024-06-21 22:19:38] [ INFO ] [TurnoController:67] iniciando la operacion de : Listar todos los Turnos
+[2024-06-21 22:22:21] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:32:32] [ INFO ] [PacienteController:29] iniciando la operacion de : Guardado de un Paciente
+[2024-06-21 22:32:34] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:33:35] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:36:06] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:36:48] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:36:56] [ INFO ] [PacienteController:29] iniciando la operacion de : Guardado de un Paciente
+[2024-06-21 22:36:57] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:40:07] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:40:19] [ INFO ] [PacienteController:29] iniciando la operacion de : Guardado de un Paciente
+[2024-06-21 22:40:20] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:41:34] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:41:38] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:41:42] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:49:36] [ INFO ] [PacienteController:29] iniciando la operacion de : Guardado de un Paciente
+[2024-06-21 22:49:39] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:50:44] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:50:52] [ INFO ] [PacienteController:29] iniciando la operacion de : Guardado de un Paciente
+[2024-06-21 22:50:53] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:51:20] [ INFO ] [PacienteController:29] iniciando la operacion de : Guardado de un Paciente
+[2024-06-21 22:51:20] [ INFO ] [PacienteController:31] El correo electronico ya existe, no se puede guardar
+[2024-06-21 22:51:22] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:51:30] [ INFO ] [PacienteController:29] iniciando la operacion de : Guardado de un Paciente
+[2024-06-21 22:51:30] [ INFO ] [PacienteController:31] El correo electronico ya existe, no se puede guardar
+[2024-06-21 22:51:34] [ INFO ] [PacienteController:29] iniciando la operacion de : Guardado de un Paciente
+[2024-06-21 22:51:36] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:51:57] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 22:51:59] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:53:11] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 22:53:15] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 22:53:18] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 22:53:19] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:58:02] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:58:12] [ INFO ] [PacienteController:29] iniciando la operacion de : Guardado de un Paciente
+[2024-06-21 22:58:13] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:59:19] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:59:29] [ INFO ] [PacienteController:29] iniciando la operacion de : Guardado de un Paciente
+[2024-06-21 22:59:31] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:59:33] [ INFO ] [PacienteController:40] iniciando la operacion de : Buscar un Paciente
+[2024-06-21 22:59:38] [ INFO ] [PacienteController:53] iniciando la operacion de : Actualizar de un Paciente
+[2024-06-21 22:59:38] [ INFO ] [PacienteController:57] Actualizado el Paciente
+[2024-06-21 22:59:40] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 22:59:47] [ INFO ] [OdontologoController:29] iniciando la operacion de : Guardado de un Odontologo
+[2024-06-21 22:59:50] [ INFO ] [OdontologoController:29] iniciando la operacion de : Guardado de un Odontologo
+[2024-06-21 22:59:51] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 22:59:53] [ INFO ] [OdontologoController:42] iniciando la operacion de : Buscar un Odontologo
+[2024-06-21 22:59:57] [ INFO ] [OdontologoController:54] iniciando la operacion de : Actualizar de un Odontologo
+[2024-06-21 22:59:57] [ INFO ] [OdontologoController:58] Actualizado el Odontologo
+[2024-06-21 22:59:59] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 23:00:02] [ INFO ] [OdontologoController:75] iniciando la operacion de : Eliminar un Odontologo
+[2024-06-21 23:00:02] [ INFO ] [OdontologoController:79] odontologo eliminado con exito
+[2024-06-21 23:00:12] [ INFO ] [PacienteController:29] iniciando la operacion de : Guardado de un Paciente
+[2024-06-21 23:00:13] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 23:00:15] [ INFO ] [PacienteController:84] iniciando la operacion de : Eliminar un Paciente
+[2024-06-21 23:00:15] [ INFO ] [PacienteController:88] Paciente eliminado con exito
+[2024-06-21 23:00:18] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 23:00:18] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 23:00:20] [ INFO ] [TurnoController:42] iniciando la operacion de : Guardado de un Turno
+[2024-06-21 23:00:22] [ INFO ] [TurnoController:67] iniciando la operacion de : Listar todos los Turnos
+[2024-06-21 23:00:37] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 23:00:37] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 23:00:40] [ INFO ] [TurnoController:42] iniciando la operacion de : Guardado de un Turno
+[2024-06-21 23:00:41] [ INFO ] [TurnoController:67] iniciando la operacion de : Listar todos los Turnos
+[2024-06-21 23:00:43] [ INFO ] [TurnoController:56] iniciando la operacion de : Buscar un Turno
+[2024-06-21 23:00:43] [ INFO ] [OdontologoController:68] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-21 23:00:43] [ INFO ] [PacienteController:78] iniciando la operacion de : Listar todos los Pacientes
+[2024-06-21 23:00:48] [ INFO ] [TurnoController:74] iniciando la operacion de : Actualizar de un Turno
+[2024-06-21 23:00:48] [ INFO ] [TurnoController:79] Actualizado el Turno
+[2024-06-21 23:00:50] [ INFO ] [TurnoController:67] iniciando la operacion de : Listar todos los Turnos
+[2024-06-21 23:00:54] [ INFO ] [TurnoController:89] iniciando la operacion de : Eliminar un Turno
+[2024-06-21 23:00:54] [ INFO ] [TurnoController:93] Turno eliminado con exito
