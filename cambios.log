@@ -1586,3 +1586,33 @@ INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES('12345','Car
 [2024-06-21 23:00:50] [ INFO ] [TurnoController:67] iniciando la operacion de : Listar todos los Turnos
 [2024-06-21 23:00:54] [ INFO ] [TurnoController:89] iniciando la operacion de : Eliminar un Turno
 [2024-06-21 23:00:54] [ INFO ] [TurnoController:93] Turno eliminado con exito
+[2024-06-21 23:05:57] [ INFO ] [OdontologoController:29] iniciando la operacion de : Guardado de un Odontologo
+[2024-06-21 23:06:51] [ INFO ] [TurnoController:67] iniciando la operacion de : Listar todos los Turnos
+[2024-06-21 23:08:41] [ INFO ] [OdontologoController:29] iniciando la operacion de : Guardado de un Odontologo
+[2024-06-24 20:18:43] [ INFO ] [OdontologoController:58] iniciando la operacion de : Actualizar de un Odontologo
+[2024-06-24 20:18:52] [ INFO ] [OdontologoController:58] iniciando la operacion de : Actualizar de un Odontologo
+[2024-06-24 20:20:36] [ INFO ] [OdontologoController:58] iniciando la operacion de : Actualizar de un Odontologo
+[2024-06-24 20:20:51] [ INFO ] [OdontologoController:58] iniciando la operacion de : Actualizar de un Odontologo
+[2024-06-24 20:20:56] [ INFO ] [OdontologoController:58] iniciando la operacion de : Actualizar de un Odontologo
+[2024-06-24 20:22:37] [ INFO ] [OdontologoController:33] iniciando la operacion de : Guardado de un Odontologo
+[2024-06-24 20:22:42] [ INFO ] [OdontologoController:33] iniciando la operacion de : Guardado de un Odontologo
+[2024-06-24 20:22:42] [ INFO ] [OdontologoController:35] La matricula ya existe, no se puede guardar
+[2024-06-24 20:23:04] [ INFO ] [OdontologoController:33] iniciando la operacion de : Guardado de un Odontologo
+[2024-06-24 20:23:04] [ INFO ] [OdontologoController:35] La matricula ya existe, no se puede guardar
+[2024-06-24 20:37:23] [ INFO ] [OdontologoController:33] iniciando la operacion de : Guardado de un Odontologo
+[2024-06-24 20:37:38] [ INFO ] [OdontologoController:33] iniciando la operacion de : Guardado de un Odontologo
+[2024-06-24 20:37:54] [ INFO ] [OdontologoController:75] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-24 20:38:06] [ INFO ] [OdontologoController:47] iniciando la operacion de : Buscar un Odontologo
+[2024-06-24 20:38:28] [ INFO ] [OdontologoController:99] iniciando la operacion de : Buscar odontologo por Matricula
+[2024-06-24 20:38:59] [ INFO ] [OdontologoController:60] iniciando la operacion de : Actualizar de un Odontologo
+[2024-06-24 20:38:59] [ INFO ] [OdontologoController:64] Actualizado el Odontologo
+[2024-06-24 20:39:06] [ INFO ] [OdontologoController:75] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-24 20:39:38] [ INFO ] [OdontologoController:75] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-24 20:39:52] [ INFO ] [OdontologoController:47] iniciando la operacion de : Buscar un Odontologo
+[2024-06-24 20:40:02] [ INFO ] [OdontologoController:99] iniciando la operacion de : Buscar odontologo por Matricula
+[2024-06-24 20:40:15] [ INFO ] [OdontologoController:60] iniciando la operacion de : Actualizar de un Odontologo
+[2024-06-24 20:40:15] [ INFO ] [OdontologoController:64] Actualizado el Odontologo
+[2024-06-24 20:40:21] [ INFO ] [OdontologoController:75] iniciando la operacion de : Listar todos los Odontologos
+[2024-06-24 20:40:30] [ INFO ] [OdontologoController:83] iniciando la operacion de : Eliminar un Odontologo
+[2024-06-24 20:40:30] [ INFO ] [OdontologoController:87] odontologo eliminado con exito
+[2024-06-24 20:40:37] [ INFO ] [OdontologoController:75] iniciando la operacion de : Listar todos los Odontologos

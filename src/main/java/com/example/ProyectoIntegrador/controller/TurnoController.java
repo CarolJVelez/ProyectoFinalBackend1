@@ -10,6 +10,7 @@ import com.example.ProyectoIntegrador.exception.ResourceNotFoundException;
 import com.example.ProyectoIntegrador.service.OdontologoService;
 import com.example.ProyectoIntegrador.service.PacienteService;
 import com.example.ProyectoIntegrador.service.TurnoService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +21,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/turnos")
+@Tag(name = "turnos", description = "Operaciones relacionadas con los turnos")
 public class TurnoController {
     @Autowired
     private TurnoService turnoService;

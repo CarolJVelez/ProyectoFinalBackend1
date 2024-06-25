@@ -5,6 +5,7 @@ import com.example.ProyectoIntegrador.entity.Paciente;
 import com.example.ProyectoIntegrador.exception.BadRequestException;
 import com.example.ProyectoIntegrador.exception.ResourceNotFoundException;
 import com.example.ProyectoIntegrador.service.PacienteService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import java.util.Optional;
 
 @RestController //cambiamos pq no necesitamos tecnologia de vista.
 @RequestMapping("/paciente")
+@Tag(name = "paciente", description = "Operaciones relacionadas con pacientes")
 public class PacienteController {
 
     private static final Logger logger= Logger.getLogger(PacienteController.class);
